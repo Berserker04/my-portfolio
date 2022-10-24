@@ -2,7 +2,7 @@ import React from "react";
 import { Avatar, Box, Grid, Paper, Stack, Typography } from "@mui/material";
 
 import logo from "../../assets/images/avatar.jpg";
-import image from "../../assets/images/defaultImage.png";
+import gif from "../../assets/images/developGif.gif";
 
 export const ProfileView = () => {
   return (
@@ -65,7 +65,23 @@ export const ProfileView = () => {
             <Typography>A2</Typography>
           </Stack>
         </Grid>
+        <Grid item xs={12} md={6}>
+          <Stack direction={{ xs: "column" }} marginTop={"0.5rem"}>
+            <Typography sx={{ fontWeight: "bold" }}>E-mail</Typography>
+            <Typography>chernandezcopete@gmail.com</Typography>
+          </Stack>
+        </Grid>
       </Grid>
+      {/* <Box component={"hr"} /> */}
+      <Box
+        component="img"
+        sx={{
+          width: "100%",
+          marginTop: 4
+        }}
+        alt="git progammer"
+        src={gif}
+      />
     </Paper>
   );
 };
