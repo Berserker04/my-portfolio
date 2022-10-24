@@ -8,36 +8,16 @@ import "./styles.scss";
 
 export const Layout = () => {
   return (
-    <Grid className="container" container spacing={2}>
-      <Grid
-        item
-        direction="row"
-        justifyContent="flex-end"
-        alignItems="center"
-        xs={12}
-        md={3}
-      >
+    <Grid container spacing={2} sx={{ marginTop: "0.5rem" }}>
+      <Grid item xs={12} md={2}>
         <Slider />
       </Grid>
-      <Grid item xs={12} md={6}>
-        {/* <Outlet /> */}
-        <p>2</p>
+      <Grid item xs={12} md={8}>
+        <Outlet />
       </Grid>
-      <Grid item xs={12} md={3}>
-        {/* <SomeSkill /> */}
-        <p>3</p>
+      <Grid item xs={12} md={2}>
+        <SomeSkill />
       </Grid>
     </Grid>
-    // <div className="container">
-    //   <div>
-    //     <Slider />
-    //   </div>
-    //   <div className="main">
-    //     <Outlet />
-    //   </div>
-    //   <div>
-    //     <SomeSkill />
-    //   </div>
-    // </div>
   );
 };

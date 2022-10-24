@@ -1,3 +1,4 @@
+import { Container } from "@mui/material";
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Layout } from "../components/layouts/Layout";
@@ -7,14 +8,14 @@ import { ProfileContainer } from "../pages/profile/ProfileContainer";
 export default function AppRouter() {
   return (
     <Router>
-      <div>
+      <Container>
         <Routes>
           <Route path="/" exact element={<Layout />}>
             <Route index exact element={<HomeContainer />} />
             <Route path="/profile" element={<ProfileContainer />} />
           </Route>
         </Routes>
-      </div>
+      </Container>
     </Router>
   );
 }
