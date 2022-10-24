@@ -1,11 +1,7 @@
 import React from "react";
-import { Avatar, Box, Paper, Stack, Typography } from "@mui/material";
+import { Box, Paper, Stack, Typography } from "@mui/material";
 
-import logo from "../../../assets/images/avatar.jpg";
-import image from "../../../assets/images/defaultImage.png";
-import { ProgressiveBar } from "../../../components/progressiveBar/ProgressiveBar";
-
-export const CertificateCard = () => {
+export const CertificateCard = ({ item, setSelected }) => {
   return (
     <Paper
       elevation={4}
@@ -13,16 +9,22 @@ export const CertificateCard = () => {
         width: "80%",
         padding: "0.5rem",
         borderRadius: "10px",
+        cursor: "pointer",
+        transition: "all 0.3s ease-out",
+        ":hover": {
+          boxShadow: "0px 1px 1px 1px #01C3CE",
+        },
       }}
+      onClick={() => setSelected(item)}
     >
-      <Typography sx={{ fontWeight: "bold" }}>Node Js</Typography>
+      <Typography sx={{ fontWeight: "bold" }}>{item.title}</Typography>
       <Box
         component="img"
         sx={{
           width: "100%",
         }}
         alt="imagen de proyecto"
-        src={image}
+        src={item.img}
       />
       <Stack
         sx={{
@@ -30,8 +32,10 @@ export const CertificateCard = () => {
           borderRadius: "10px",
         }}
       >
-        <Typography sx={{ fontWeight: "bold", fontSize:20 }}>Platzi</Typography>
-        <Typography>2018-06-22</Typography>
+        <Typography sx={{ fontWeight: "bold", fontSize: 20 }}>
+          {item.by}
+        </Typography>
+        <Typography>{item.date}</Typography>
       </Stack>
     </Paper>
   );

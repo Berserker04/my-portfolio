@@ -2,9 +2,8 @@ import React from "react";
 import { Box, Grid, Paper, Stack } from "@mui/material";
 
 import { CertificateCard } from "./components/CertificateCard";
-import { CertificateModal } from "./components/CertificateModal";
 
-export const CertificateView = () => {
+export const CertificateView = ({ certificates, setSelected }) => {
   return (
     <Box
       className="bar-scroll-y"
@@ -14,7 +13,6 @@ export const CertificateView = () => {
         paddingRight: 0.5,
       }}
     >
-        {/* <CertificateModal/> */}
       <Paper
         elevation={3}
         sx={{
@@ -35,36 +33,13 @@ export const CertificateView = () => {
         </Stack>
         <Box component={"hr"} marginBottom={2.5} />
         <Grid container spacing={{ xs: 4, md: 6 }}>
-          <Grid item xs={12} md={6}>
-            <Stack alignItems={"center"}>
-              <CertificateCard />
-            </Stack>
-          </Grid>
-          <Grid item xs={12} md={6}>
-            <Stack alignItems={"center"}>
-              <CertificateCard />
-            </Stack>
-          </Grid>
-          <Grid item xs={12} md={6}>
-            <Stack alignItems={"center"}>
-              <CertificateCard />
-            </Stack>
-          </Grid>
-          <Grid item xs={12} md={6}>
-            <Stack alignItems={"center"}>
-              <CertificateCard />
-            </Stack>
-          </Grid>
-          <Grid item xs={12} md={6}>
-            <Stack alignItems={"center"}>
-              <CertificateCard />
-            </Stack>
-          </Grid>
-          <Grid item xs={12} md={6}>
-            <Stack alignItems={"center"}>
-              <CertificateCard />
-            </Stack>
-          </Grid>
+          {certificates.map((cert) => (
+            <Grid item xs={12} md={6}>
+              <Stack alignItems={"center"}>
+                <CertificateCard item={cert} setSelected={setSelected} />
+              </Stack>
+            </Grid>
+          ))}
         </Grid>
       </Paper>
     </Box>
