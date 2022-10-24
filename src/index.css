@@ -24,7 +24,7 @@ code {
 
 /* Works on Chrome, Edge, and Safari */
 .bar-scroll-y::-webkit-scrollbar {
-  width: 12px;
+  width: 6px;
 }
 
 .bar-scroll-y::-webkit-scrollbar-track {

@@ -39,8 +39,51 @@ export const ExperienceView = () => {
           </Stack>
         </Grid>
         <Grid item xs={12} md={6}>
-          <Stack alignItems={"center"}>
-            <ExperienceCard />
+          <Stack height="100%">
+            <Stack height="100%" justifyContent={"flex-end"}>
+              <Box
+                bgcolor={"#fff"}
+                sx={{
+                  width: "52.2%",
+                  height: "1rem",
+                }}
+              />
+            </Stack>
+            <Stack height="100%" alignItems={"center"}>
+              <Box
+                bgcolor={"#fff"}
+                sx={{
+                  width: "1rem",
+                  height: "100%",
+                }}
+              />
+            </Stack>
+          </Stack>
+        </Grid>
+        <Grid item xs={12} md={6}>
+          <Stack height="100%">
+            <Stack
+              height="100%"
+              justifyContent={"flex-end"}
+              alignItems="flex-end"
+            >
+              <Box
+                bgcolor={"#fff"}
+                sx={{
+                  width: "52.2%",
+                  height: "1rem",
+                }}
+              />
+            </Stack>
+            <Stack height="100%" alignItems={"center"}>
+              <Box
+                bgcolor={"#fff"}
+                sx={{
+                  width: "1rem",
+                  height: "100%",
+                }}
+              />
+            </Stack>
           </Stack>
         </Grid>
         <Grid item xs={12} md={6}>
@@ -54,9 +97,147 @@ export const ExperienceView = () => {
           </Stack>
         </Grid>
         <Grid item xs={12} md={6}>
+          <Stack height="100%">
+            <Stack height="100%" justifyContent={"flex-end"}>
+              <Box
+                bgcolor={"#fff"}
+                sx={{
+                  width: "52.2%",
+                  height: "1rem",
+                }}
+              />
+            </Stack>
+            <Stack height="100%" alignItems={"center"}>
+              <Box
+                bgcolor={"#fff"}
+                sx={{
+                  width: "1rem",
+                  height: "100%",
+                }}
+              />
+            </Stack>
+          </Stack>
+        </Grid>
+        <Grid item xs={12} md={6}>
+          <Stack height="100%">
+            <Stack
+              height="100%"
+              justifyContent={"flex-end"}
+              alignItems="flex-end"
+            >
+              <Box
+                bgcolor={"#fff"}
+                sx={{
+                  width: "52.2%",
+                  height: "1rem",
+                }}
+              />
+            </Stack>
+            <Stack height="100%" alignItems={"center"}>
+              <Box
+                bgcolor={"#fff"}
+                sx={{
+                  width: "1rem",
+                  height: "100%",
+                }}
+              />
+            </Stack>
+          </Stack>
+        </Grid>
+        <Grid item xs={12} md={6}>
           <Stack alignItems={"center"}>
             <ExperienceCard />
           </Stack>
+        </Grid>
+        <Grid item xs={12} md={6}>
+          <Stack alignItems={"center"}>
+            <ExperienceCard />
+          </Stack>
+        </Grid>
+        <Grid item xs={12} md={6}>
+          <Stack height="100%">
+            <Stack height="100%" justifyContent={"flex-end"}>
+              <Box
+                bgcolor={"#fff"}
+                sx={{
+                  width: "52.2%",
+                  height: "1rem",
+                }}
+              />
+            </Stack>
+            <Stack height="100%" alignItems={"center"}>
+              <Box
+                bgcolor={"#fff"}
+                sx={{
+                  width: "1rem",
+                  height: "100%",
+                }}
+              />
+            </Stack>
+          </Stack>
+        </Grid>
+        <Grid item xs={12} md={6}>
+          <Stack height="100%">
+            <Stack
+              height="100%"
+              justifyContent={"flex-end"}
+              alignItems="flex-end"
+            >
+              <Box
+                bgcolor={"#fff"}
+                sx={{
+                  width: "52.2%",
+                  height: "1rem",
+                }}
+              />
+            </Stack>
+            <Stack height="100%" alignItems={"center"}>
+              <Box
+                bgcolor={"#fff"}
+                sx={{
+                  width: "1rem",
+                  height: "100%",
+                }}
+              />
+            </Stack>
+          </Stack>
+        </Grid>
+        <Grid item xs={12} md={6}>
+          <Stack alignItems={"center"}>
+            <ExperienceCard />
+          </Stack>
+        </Grid>
+        <Grid item xs={12} md={6}>
+          <Stack alignItems={"center"}>
+            <ExperienceCard />
+          </Stack>
+        </Grid>
+        <Grid item xs={12} md={6}>
+          <Stack height="100%">
+            <Stack height="100%" justifyContent={"flex-end"}>
+              <Box
+                bgcolor={"#fff"}
+                sx={{
+                  width: "52.2%",
+                  height: "1rem",
+                }}
+              />
+            </Stack>
+            <Stack height="100%" alignItems={"center"}>
+              <Box
+                bgcolor={"#fff"}
+                sx={{
+                  width: "1rem",
+                  height: "100%",
+                }}
+              />
+            </Stack>
+          </Stack>
+        </Grid>
+        <Grid item xs={12} md={6}>
+          {/* <Stack alignItems={"center"}>
+            <ExperienceCard />
+          </Stack> */}
         </Grid>
         <Grid item xs={12} md={6}>
           <Stack alignItems={"center"}>
