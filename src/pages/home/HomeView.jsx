@@ -1,6 +1,6 @@
 import { Grid } from "@mui/material";
 import React from "react";
-import { HomeCard } from "./components/HomeCard/HomeCard";
+import { HomeCard } from "./components/HomeCard";
 
 import "./styles.scss";
 
@@ -16,7 +16,7 @@ export const HomeView = () => {
         height: "calc(100vh - 1.5rem)",
         paddingRight: "0.3rem",
       }}
-      className="home-container"
+      className="bar-scroll-y"
     >
       {proyectsList.map((proyect) => (
         <Grid item sx={{ padding: 0 }}>

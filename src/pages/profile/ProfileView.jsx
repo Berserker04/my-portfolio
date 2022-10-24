@@ -27,7 +27,7 @@ export const ProfileView = () => {
         </Box>
       </Stack>
       <Box component={"hr"} />
-      <Grid container spacing={{ xs: 2, md: 3 }}>
+      <Grid container spacing={{ xs: 2, md: 2 }}>
         <Grid item xs={12} md={6}>
           <Stack direction={{ xs: "column" }} marginTop={"0.5rem"}>
             <Typography sx={{ fontWeight: "bold" }}>Profession</Typography>
@@ -77,7 +77,7 @@ export const ProfileView = () => {
         component="img"
         sx={{
           width: "100%",
-          marginTop: 4
+          marginTop: 3
         }}
         alt="git progammer"
         src={gif}

@@ -1,8 +1,8 @@
 import { Avatar, Box, Paper, Stack } from "@mui/material";
 import React from "react";
 
-import logo from "../../../../assets/images/avatar.jpg";
-import image from "../../../../assets/images/defaultImage.png";
+import logo from "../../../assets/images/avatar.jpg";
+import image from "../../../assets/images/defaultImage.png";
 
 export const HomeCard = () => {
   return (

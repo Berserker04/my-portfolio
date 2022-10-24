@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Grid, Paper, Stack } from "@mui/material";
 
-import { SkillCard } from "./components/skillCard/SkillCard";
+import { SkillCard } from "./components/SkillCard";
 
 export const SkillView = () => {
   return (

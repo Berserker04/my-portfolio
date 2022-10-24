@@ -1,8 +1,8 @@
 import React from "react";
 import { Avatar, Paper, Stack, Typography } from "@mui/material";
 
-import logo from "../../../../assets/images/avatar.jpg";
-import { ProgressiveBar } from "../../../../components/progressiveBar/ProgressiveBar";
+import logo from "../../../assets/images/avatar.jpg";
+import { ProgressiveBar } from "../../../components/progressiveBar/ProgressiveBar";
 
 export const SkillCard = () => {
   return (
