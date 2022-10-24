@@ -18,8 +18,8 @@ export const HomeView = () => {
       }}
       className="bar-scroll-y"
     >
-      {proyectsList.map((proyect) => (
-        <Grid item sx={{ padding: 0 }}>
+      {proyectsList.map((proyect, i) => (
+        <Grid item sx={{ padding: 0 }} key={i}>
           <HomeCard />
         </Grid>
       ))}

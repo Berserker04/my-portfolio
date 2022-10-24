@@ -15,32 +15,32 @@ export const Slider = () => {
         <nav>
           <ul>
             <li>
-              <NavLink to="/" end activeClassName="active">
+              <NavLink to="/" end>
                 Home
               </NavLink>
             </li>
             <li>
-              <NavLink to="/profile" activeClassName="active">
+              <NavLink to="/profile">
                 Profile
               </NavLink>
             </li>
             <li>
-              <NavLink to="/skills" activeClassName="active">
+              <NavLink to="/skills">
                 Skills
               </NavLink>
             </li>
             <li>
-              <NavLink to="/certificates" activeClassName="active">
+              <NavLink to="/certificates">
                 Certificates
               </NavLink>
             </li>
             <li>
-              <NavLink to="/experiences" activeClassName="active">
+              <NavLink to="/experiences">
                 Experiences
               </NavLink>
             </li>
             <li>
-              <NavLink to="/all-proyects" activeClassName="active">
+              <NavLink to="/all-proyects">
                 All proyects
               </NavLink>
             </li>

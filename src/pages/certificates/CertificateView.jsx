@@ -33,8 +33,8 @@ export const CertificateView = ({ certificates, setSelected }) => {
         </Stack>
         <Box component={"hr"} marginBottom={2.5} />
         <Grid container spacing={{ xs: 4, md: 6 }}>
-          {certificates.map((cert) => (
-            <Grid item xs={12} md={6}>
+          {certificates.map((cert, i) => (
+            <Grid item xs={12} md={6} key={i}>
               <Stack alignItems={"center"}>
                 <CertificateCard item={cert} setSelected={setSelected} />
               </Stack>
