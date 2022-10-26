@@ -3,7 +3,7 @@ import { ExperienceView } from "./ExperienceView";
 
 import logo from "../../assets/images/avatar.jpg";
 
-const experiencias = [
+const experiences = [
   {
     logo: logo,
     buiness: "Sena (fabrica de software)",
@@ -55,33 +55,27 @@ const experiencias = [
 ];
 
 export const ExperienceContainer = () => {
-  let newList = [];
+  let experiencesWithArrows = [];
   let isCard = true;
 
-  experiencias.forEach((item, i) => {
-    newList.push(item);
-    if (experiencias.length > 1 && isCard) {
-      newList.push({ right: true });
-      newList.push({ left: true });
+  const getIndex = (list) => list.findIndex((item) => item.left || item.right);
+  const deleteLastArrows = (list) => (list[getIndex(list)] = { null: true });
+
+  experiences.forEach((item, i) => {
+    experiencesWithArrows.push(item);
+    if (experiences.length > 1 && isCard) {
+      experiencesWithArrows.push({ right: true });
+      experiencesWithArrows.push({ left: true });
       isCard = false;
     } else {
       isCard = true;
     }
   });
 
-  newList.reverse();
+  experiencesWithArrows.reverse();
+  deleteLastArrows(experiencesWithArrows);
+  if (experiences.length % 2 !== 0) deleteLastArrows(experiencesWithArrows);
+  experiencesWithArrows.reverse();
 
-  newList[newList.findIndex((item) => item.left || item.right)] = {
-    null: true,
-  };
-
-  if (experiencias.length % 2 !== 0) {
-    newList[newList.findIndex((item) => item.left || item.right)] = {
-      null: true,
-    };
-  }
-
-  newList.reverse();
-
-  return <ExperienceView experiencias={newList} />;
+  return <ExperienceView experiences={experiencesWithArrows} />;
 };

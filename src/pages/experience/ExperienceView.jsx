@@ -1,8 +1,10 @@
 import React from "react";
-import { Box, Grid, Paper, Stack } from "@mui/material";
+import { Box, Grid, Stack } from "@mui/material";
 import { ExperienceCard } from "./components/ExperienceCard";
 
-export const ExperienceView = ({ experiencias }) => {
+import "./styles.scss";
+
+export const ExperienceView = ({ experiences }) => {
   return (
     <Box
       className="bar-scroll-y"
@@ -23,7 +25,7 @@ export const ExperienceView = ({ experiencias }) => {
       </Stack>
       <Box component={"hr"} marginBottom={2.5} />
       <Grid container spacing={{ xs: 2, md: 4 }}>
-        {experiencias.map((item) =>
+        {experiences.map((item) =>
           item.right ? (
             <Grid item xs={12} md={6}>
               <Stack height="100%">
@@ -33,8 +35,17 @@ export const ExperienceView = ({ experiencias }) => {
                     sx={{
                       width: "52.2%",
                       height: "1rem",
+                      overflow: "hidden",
                     }}
-                  />
+                  >
+                    <Box
+                      className="arrowX-1"
+                    //   bgcolor={"red"}
+                      sx={{
+                        height: "1rem",
+                      }}
+                    />
+                  </Box>
                 </Stack>
                 <Stack height="100%" alignItems={"center"}>
                   <Box
@@ -42,8 +53,17 @@ export const ExperienceView = ({ experiencias }) => {
                     sx={{
                       width: "1rem",
                       height: "100%",
+                      overflow: "hidden",
                     }}
-                  />
+                  >
+                    <Box
+                    //   bgcolor={"red"}
+                      className="arrowY-1"
+                      sx={{
+                        height: "100%",
+                      }}
+                    />
+                  </Box>
                 </Stack>
               </Stack>
             </Grid>
@@ -60,8 +80,17 @@ export const ExperienceView = ({ experiencias }) => {
                     sx={{
                       width: "52.2%",
                       height: "1rem",
+                      overflow: "hidden",
                     }}
-                  />
+                  >
+                    <Box
+                      className="arrowX-2"
+                    //   bgcolor="red"
+                      sx={{
+                        height: "1rem",
+                      }}
+                    />
+                  </Box>
                 </Stack>
                 <Stack height="100%" alignItems={"center"}>
                   <Box
@@ -69,8 +98,18 @@ export const ExperienceView = ({ experiencias }) => {
                     sx={{
                       width: "1rem",
                       height: "100%",
+                      overflow: "hidden",
                     }}
-                  />
+                  >
+                    <Box
+                      className="arrowY-2"
+                    //   bgcolor={"red"}
+                      sx={{
+                        width: "1rem",
+                        height: "100%",
+                      }}
+                    />
+                  </Box>
                 </Stack>
               </Stack>
             </Grid>

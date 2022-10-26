@@ -2,6 +2,7 @@ import { Container } from "@mui/material";
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Layout } from "../components/layouts/Layout";
+import { AllProyectsContainer } from "../pages/allProyects/AllProyectsContainer";
 import { CertificateContainer } from "../pages/certificates/CertificateContainer";
 import { ExperienceContainer } from "../pages/experience/ExperienceContainer";
 import { HomeContainer } from "../pages/home/HomeContainer";
@@ -19,6 +20,7 @@ export default function AppRouter() {
             <Route path="/skills" element={<SkillContainer />} />
             <Route path="/certificates" element={<CertificateContainer />} />
             <Route path="/experiences" element={<ExperienceContainer />} />
+            <Route path="/all-proyects" element={<AllProyectsContainer />} />
           </Route>
         </Routes>
       </Container>
