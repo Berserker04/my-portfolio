@@ -1,20 +1,11 @@
 import React from "react";
 import { Box, Grid, Paper, Stack } from "@mui/material";
-import InputLabel from "@mui/material/InputLabel";
-import MenuItem from "@mui/material/MenuItem";
-import FormControl from "@mui/material/FormControl";
-import Select from "@mui/material/Select";
 
 import { AllProyectsCard } from "./components/AllProyectsCard";
-import Search from "../../components/common/Search";
+import { AllProyectFilter } from "./components/AllProyectFilter";
+import { HeaderPage } from "../../components/HeaderPage/HeaderPage";
 
 export const AllProyectsView = ({ allProyects }) => {
-  const [age, setAge] = React.useState("");
-
-  const handleChange = (event) => {
-    setAge(event.target.value);
-  };
-
   return (
     <Box
       className="bar-scroll-y"
@@ -33,36 +24,8 @@ export const AllProyectsView = ({ allProyects }) => {
           borderRadius: "15px",
         }}
       >
-        <Stack
-          direction={{ xs: "row" }}
-          alignItems={{ xs: "center" }}
-          justifyContent={"center"}
-        >
-          <Box component={"h2"} textAlign={"center"}>
-            Proyects
-          </Box>
-        </Stack>
-        <Box component={"hr"} marginBottom={2.5} />
-        <Stack direction={"row"} marginBottom="2rem">
-            <Search />
-            <FormControl sx={{ m: 1, minWidth: 120 }} size="small">
-              <InputLabel id="demo-select-small">Age</InputLabel>
-              <Select
-                labelId="demo-select-small"
-                id="demo-select-small"
-                value={age}
-                label="Age"
-                onChange={handleChange}
-              >
-                <MenuItem value="">
-                  <em>None</em>
-                </MenuItem>
-                <MenuItem value={10}>Ten</MenuItem>
-                <MenuItem value={20}>Twenty</MenuItem>
-                <MenuItem value={30}>Thirty</MenuItem>
-              </Select>
-            </FormControl>
-        </Stack>
+        <HeaderPage title="Proyects" />
+        <AllProyectFilter />
         <Grid container spacing={{ xs: 4, md: 6 }}>
           {allProyects.map((proyect, i) => (
             <Grid item xs={12} md={6} key={i}>

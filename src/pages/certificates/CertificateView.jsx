@@ -2,6 +2,7 @@ import React from "react";
 import { Box, Grid, Paper, Stack } from "@mui/material";
 
 import { CertificateCard } from "./components/CertificateCard";
+import { HeaderPage } from "../../components/HeaderPage/HeaderPage";
 
 export const CertificateView = ({ certificates, setSelected }) => {
   return (
@@ -22,16 +23,7 @@ export const CertificateView = ({ certificates, setSelected }) => {
           borderRadius: "15px",
         }}
       >
-        <Stack
-          direction={{ xs: "row" }}
-          alignItems={{ xs: "center" }}
-          justifyContent={"center"}
-        >
-          <Box component={"h2"} textAlign={"center"}>
-            Certificates
-          </Box>
-        </Stack>
-        <Box component={"hr"} marginBottom={2.5} />
+        <HeaderPage title="Certificates" />
         <Grid container spacing={{ xs: 4, md: 6 }}>
           {certificates.map((cert, i) => (
             <Grid item xs={12} md={6} key={i}>

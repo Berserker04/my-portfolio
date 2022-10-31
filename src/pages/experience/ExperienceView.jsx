@@ -3,6 +3,7 @@ import { Box, Grid, Stack } from "@mui/material";
 import { ExperienceCard } from "./components/ExperienceCard";
 
 import "./styles.scss";
+import { HeaderPage } from "../../components/HeaderPage/HeaderPage";
 
 export const ExperienceView = ({ experiences }) => {
   return (
@@ -14,16 +15,7 @@ export const ExperienceView = ({ experiences }) => {
         paddingRight: 0.5,
       }}
     >
-      <Stack
-        direction={{ xs: "row" }}
-        alignItems={{ xs: "center" }}
-        justifyContent={"center"}
-      >
-        <Box component={"h2"} textAlign={"center"} color="white">
-          Experiences
-        </Box>
-      </Stack>
-      <Box component={"hr"} marginBottom={2.5} />
+      <HeaderPage title="Experiences" titleColor="white" />
       <Grid container spacing={{ xs: 2, md: 4 }}>
         {experiences.map((item) =>
           item.right ? (
@@ -40,7 +32,7 @@ export const ExperienceView = ({ experiences }) => {
                   >
                     <Box
                       className="arrowX-1"
-                    //   bgcolor={"red"}
+                      //   bgcolor={"red"}
                       sx={{
                         height: "1rem",
                       }}
@@ -57,7 +49,7 @@ export const ExperienceView = ({ experiences }) => {
                     }}
                   >
                     <Box
-                    //   bgcolor={"red"}
+                      //   bgcolor={"red"}
                       className="arrowY-1"
                       sx={{
                         height: "100%",
@@ -85,7 +77,7 @@ export const ExperienceView = ({ experiences }) => {
                   >
                     <Box
                       className="arrowX-2"
-                    //   bgcolor="red"
+                      //   bgcolor="red"
                       sx={{
                         height: "1rem",
                       }}
@@ -103,7 +95,7 @@ export const ExperienceView = ({ experiences }) => {
                   >
                     <Box
                       className="arrowY-2"
-                    //   bgcolor={"red"}
+                      //   bgcolor={"red"}
                       sx={{
                         width: "1rem",
                         height: "100%",

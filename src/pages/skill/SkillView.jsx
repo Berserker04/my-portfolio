@@ -2,6 +2,7 @@ import React from "react";
 import { Box, Grid, Paper, Stack } from "@mui/material";
 
 import { SkillCard } from "./components/SkillCard";
+import { HeaderPage } from "../../components/HeaderPage/HeaderPage";
 
 export const SkillView = () => {
   return (
@@ -23,16 +24,7 @@ export const SkillView = () => {
           borderRadius: "15px",
         }}
       >
-        <Stack
-          direction={{ xs: "row" }}
-          alignItems={{ xs: "center" }}
-          justifyContent={"center"}
-        >
-          <Box component={"h2"} textAlign={"center"}>
-            Skills
-          </Box>
-        </Stack>
-        <Box component={"hr"} marginBottom={2.5} />
+        <HeaderPage title="Skills" />
         <Grid container spacing={{ xs: 2, md: 4 }}>
           <Grid item xs={12} md={6}>
             <Stack alignItems={"center"}>
