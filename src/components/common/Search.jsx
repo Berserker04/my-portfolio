@@ -8,7 +8,7 @@ import SearchIcon from "@mui/icons-material/Search";
 import DirectionsIcon from "@mui/icons-material/Directions";
 import { FormControl, TextField } from "@mui/material";
 
-export default function Search() {
+export default function Search({ handleSearch }) {
   return (
     <FormControl sx={{ m: 1, width: "100%" }} size="small">
       {/* <IconButton sx={{ p: '10px' }} aria-label="menu">
@@ -19,8 +19,13 @@ export default function Search() {
         sx={{ ml: 1, flex: 1 }}
         placeholder="Search..."
         inputProps={{ "aria-label": "search google maps" }}
+        onChange={({ target }) => handleSearch(target.value)}
       />
-      <IconButton type="button" sx={{ p: "10px", position:"absolute", right:0 }} aria-label="search">
+      <IconButton
+        type="button"
+        sx={{ p: "10px", position: "absolute", right: 0 }}
+        aria-label="search"
+      >
         <SearchIcon />
       </IconButton>
       {/* <Divider sx={{ height: 28, m: 0.5 }} orientation="vertical" />
