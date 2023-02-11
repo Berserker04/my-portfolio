@@ -5,7 +5,7 @@ import { AllProyectsCard } from "./components/AllProyectsCard";
 import { AllProyectFilter } from "./components/AllProyectFilter";
 import { HeaderPage } from "../../components/HeaderPage/HeaderPage";
 
-export const AllProyectsView = ({ allProyects }) => {
+export const AllProyectsView = ({ allProyects, handleSearch, handleFilter }) => {
   return (
     <Box
       className="bar-scroll-y"
@@ -25,7 +25,7 @@ export const AllProyectsView = ({ allProyects }) => {
         }}
       >
         <HeaderPage title="Proyects" />
-        <AllProyectFilter />
+        <AllProyectFilter handleSearch={handleSearch} handleFilter={handleFilter} />
         <Grid container spacing={{ xs: 4, md: 6 }}>
           {allProyects.map((proyect, i) => (
             <Grid item xs={12} md={6} key={i}>
@@ -34,6 +34,16 @@ export const AllProyectsView = ({ allProyects }) => {
               </Stack>
             </Grid>
           ))}
+          {allProyects.length === 0 && (
+            <Grid item xs={12}>
+              <Box
+                component={"p"}
+                textAlign="center"
+              >
+                No projects found.
+              </Box>
+            </Grid>
+          )}
         </Grid>
       </Paper>
     </Box>

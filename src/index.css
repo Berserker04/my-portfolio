@@ -18,21 +18,21 @@ code {
 }
 
 /* Works on Firefox */
-.bar-scroll-y {
+* {
   scrollbar-width: thin;
    /* scrollbar-color: #CCCCCC whitesmoke; */
 }
 
 /* Works on Chrome, Edge, and Safari */
-.bar-scroll-y::-webkit-scrollbar {
+*::-webkit-scrollbar {
   width: 6px;
 }
 
-.bar-scroll-y::-webkit-scrollbar-track {
+*::-webkit-scrollbar-track {
    /* background: whitesmoke; */
 }
 
-.bar-scroll-y::-webkit-scrollbar-thumb {
+*::-webkit-scrollbar-thumb {
   background-color: whitesmoke;
   border-radius: 20px;
    /* border: 3px solid whitesmoke; */
