@@ -2,6 +2,7 @@ import React from "react";
 import { AllProyectsView } from "./AllProyectsView";
 import image from "../../assets/images/defaultImage.png";
 import { useState, useEffect } from "react";
+import { useCallback } from "react";
 
 const allProyects = [
   {
@@ -60,18 +61,18 @@ export const AllProyectsContainer = () => {
     setValueFilter(value);
   };
 
-  const filterAllProyects = () => {
+  const filterAllProyects = useCallback(() => {
     const filteredResult = allProyects.filter(
       (item) =>
         item.title.toLowerCase().includes(valueSearch.toLowerCase()) &&
         (item.type === valueFilter || valueFilter === "allProyects")
     );
     setAllProyectsFilter(filteredResult);
-  };
+  }, [setAllProyectsFilter, valueFilter, valueSearch]);
 
   useEffect(() => {
     filterAllProyects();
-  }, [valueSearch, valueFilter]);
+  }, [filterAllProyects]);
 
   return (
     <AllProyectsView
