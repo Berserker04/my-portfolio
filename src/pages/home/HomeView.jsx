@@ -14,7 +14,7 @@ export const HomeView = () => {
       sx={{
         overflowY: "scroll",
         height: "calc(100vh - 1.5rem)",
-        paddingRight: "0.3rem",
+        padding: "0.5rem",
       }}
       className="bar-scroll-y"
     >

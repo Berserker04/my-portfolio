@@ -5,10 +5,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #03091E;
+  background-color: #F3F3F3;
   /* background-color: #121212; */
   /* background-color: whitesmoke; */
   /* padding: 2rem 5rem; */
+  /* background-image: url("./assets/images/bg.jpg"); */
 }
 
 code {

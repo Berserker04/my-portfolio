@@ -11,7 +11,7 @@ export const SkillView = () => {
       sx={{
         overflowY: "scroll",
         height: "calc(100vh - 2rem)",
-        paddingRight: 0.5,
+        padding: 0.5,
       }}
     >
       <Paper

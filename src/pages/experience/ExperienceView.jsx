@@ -12,10 +12,10 @@ export const ExperienceView = ({ experiences }) => {
       sx={{
         overflowY: "scroll",
         height: "calc(100vh - 2rem)",
-        paddingRight: 0.5,
+        padding: 0.5,
       }}
     >
-      <HeaderPage title="Experiences" titleColor="white" />
+      <HeaderPage title="Experiences" titleColor="black" />
       <Grid container spacing={{ xs: 2, md: 4 }}>
         {experiences.map((item) =>
           item.right ? (
@@ -23,7 +23,7 @@ export const ExperienceView = ({ experiences }) => {
               <Stack height="100%">
                 <Stack height="100%" justifyContent={"flex-end"}>
                   <Box
-                    bgcolor={"#fff"}
+                    bgcolor={"#000"}
                     sx={{
                       width: "52.2%",
                       height: "1rem",
@@ -41,7 +41,7 @@ export const ExperienceView = ({ experiences }) => {
                 </Stack>
                 <Stack height="100%" alignItems={"center"}>
                   <Box
-                    bgcolor={"#fff"}
+                    bgcolor={"#000"}
                     sx={{
                       width: "1rem",
                       height: "100%",
@@ -68,7 +68,7 @@ export const ExperienceView = ({ experiences }) => {
                   alignItems="flex-end"
                 >
                   <Box
-                    bgcolor={"#fff"}
+                    bgcolor={"#000"}
                     sx={{
                       width: "52.2%",
                       height: "1rem",
@@ -86,7 +86,7 @@ export const ExperienceView = ({ experiences }) => {
                 </Stack>
                 <Stack height="100%" alignItems={"center"}>
                   <Box
-                    bgcolor={"#fff"}
+                    bgcolor={"#000"}
                     sx={{
                       width: "1rem",
                       height: "100%",
